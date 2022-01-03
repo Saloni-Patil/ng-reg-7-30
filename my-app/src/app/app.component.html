@@ -1,10 +1,23 @@
 <div class="cls" id="div1">1</div>
 <div class="cls" id="div2">2</div>
-<div class="cls" id="div3">
+<div class="cls" id="div3" style="height: 900px">
+  <!-- Interpollation {{ var/exp }} Data Binding -->
   <h1>{{ title }}</h1>
   <h2>{{ names }}</h2>
   <h2>Student's name is : {{ student.name }}</h2>
   <h2>Student lives in : {{ student.city }}</h2>
+
+  <!-- Directive: angular's attr. in HTML tag -->
+
+  <h1 align="center" *ngFor="let name of names">{{ name }}</h1>
+
+  <div *ngFor="let product of products" class="prod-card">
+    <h2>Prod Id: {{ product.id }}</h2>
+    <h1>Prod Name: {{ product.name }}</h1>
+  </div>
+
+  <!-- let vs var vs const
+      js: for, for-of,  for-in,  forEach, map -->
 </div>
 <div class="cls" id="div4">4</div>
 <div class="cls" id="div5">5</div>

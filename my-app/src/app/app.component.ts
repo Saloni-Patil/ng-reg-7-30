@@ -18,6 +18,21 @@ export class AppComponent {
     city: 'Mumbai',
   };
 
+  products = [
+    {
+      id: 1001,
+      name: 'Mobile',
+    },
+    {
+      id: 1002,
+      name: 'Laptop',
+    },
+    {
+      id: 1003,
+      name: 'Book',
+    },
+  ];
+
   // document.write(title);
   // document.getElementById('demo').innerHTML = title
   // {{title}}

@@ -1,5 +1,12 @@
+.prod-card {
+  box-shadow: 2px 2px 6px black;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
 .cls {
-  color: hotpink;
+  color: grey;
   font-size: 20px;
   border: 1px solid silver;
   height: 450px;
