@@ -1,10 +1,11 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { OffersPipe } from './offers.pipe';
 
 @NgModule({
-  declarations: [AppComponent], // all components goes here
+  declarations: [AppComponent, OffersPipe], // all components goes here
   imports: [BrowserModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })

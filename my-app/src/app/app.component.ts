@@ -21,19 +21,39 @@ export class AppComponent {
   products = [
     {
       id: 1001,
-      name: 'Mobile',
+      name: 'mobile',
+      inStock: 20,
+      price: 1200,
     },
     {
       id: 1002,
       name: 'Laptop',
+      inStock: 20,
+      price: 1200,
     },
     {
       id: 1003,
-      name: 'Book',
+      name: 'BOOK',
+      inStock: 10,
+      price: 1200,
     },
   ];
 
-  // document.write(title);
+  calcProds() {
+    let tot = 0;
+
+    for (let product of this.products) {
+      tot = tot + product.inStock;
+    }
+
+    return tot;
+  }
+
+  // function calcProds(params:type) {
+
+  // }
+
+  // document.write(title);   =   {{title}}
   // document.getElementById('demo').innerHTML = title
   // {{title}}
 }
