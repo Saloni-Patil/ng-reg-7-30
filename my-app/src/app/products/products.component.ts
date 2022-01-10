@@ -1,0 +1,64 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css'],
+})
+export class ProductsComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  title = 'Hello Angular';
+
+  names = ['Alex', 'Ashitosh', 'Ali'];
+
+  student = {
+    name: 'Alex',
+    rNo: 10,
+    city: 'Mumbai',
+  };
+
+  products = [
+    {
+      id: 1001,
+      name: 'mobile',
+      inStock: 20,
+      price: 1200,
+      country: 'Australia',
+    },
+    {
+      id: 1002,
+      name: 'Laptop',
+      inStock: 20,
+      price: 1200,
+      country: 'India',
+    },
+    {
+      id: 1003,
+      name: 'BOOK',
+      inStock: 10,
+      price: 1200,
+      country: 'India',
+    },
+  ];
+
+  calcProds() {
+    let tot = 0;
+
+    for (let product of this.products) {
+      tot = tot + product.inStock;
+    }
+
+    return tot;
+  }
+
+  // function calcProds(params:type) {
+
+  // }
+
+  // document.write(title);   =   {{title}}
+  // document.getElementById('demo').innerHTML = title
+  // {{title}}
+}

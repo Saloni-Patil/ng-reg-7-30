@@ -3,9 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { OffersPipe } from './offers.pipe';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { BannerThreeComponent } from './banner-three/banner-three.component';
+import { BannerTwoComponent } from './banner-two/banner-two.component';
+import { BannerOneComponent } from './banner-one/banner-one.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
-  declarations: [AppComponent, OffersPipe], // all components goes here
+  declarations: [AppComponent, OffersPipe, NavComponent, FooterComponent, BannerThreeComponent, BannerTwoComponent, BannerOneComponent, ContactUsComponent, ProductsComponent], // all components goes here
   imports: [BrowserModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })

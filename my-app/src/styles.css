@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+.prod-card {
+  box-shadow: 2px 2px 6px black;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cls {
+  color: grey;
+  font-size: 20px;
+  border: 1px solid silver;
+  height: 450px;
+}
+
+#div2 {
+  background-image: url("./assets/img/background1.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#div4 {
+  background-image: url("./assets/img/background2.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#div6 {
+  background-image: url("./assets/img/background3.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#div1 {
+  height: 70px;
+}
