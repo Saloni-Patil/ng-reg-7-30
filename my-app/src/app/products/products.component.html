@@ -1,56 +1,5 @@
 <div class="cls" id="div3" style="height: 900px">
-  <!-- Interpollation {{ var/exp }} Data Binding -->
-  <h1>{{ title }}</h1>
-  <h2>{{ names }}</h2>
-  <h2>Student's name is : {{ student.name }}</h2>
-  <h2>Student lives in : {{ student.city }}</h2>
-
-  <!-- Directive: angular's attr. in HTML tag -->
-  <!-- for(let name of names){
-
-} -->
-  <h1 align="center" *ngFor="let name of names">{{ name }}</h1>
-
-  <!-- <label for="">name:</label> -->
-
-  <h1>We have {{ calcProds() }} products..!</h1>
-  <div *ngFor="let product of products" class="prod-card">
-    <h2>Prod Id: {{ product.id }}</h2>
-    <h1>Prod Name: {{ product.name | uppercase }}</h1>
-    <h3 *ngIf="product.inStock > 0; else outOfStock">
-      Prod in stock: {{ product.inStock }}
-    </h3>
-    <ng-template #outOfStock>
-      <h3>Out Of Stock</h3>
-    </ng-template>
-    <h2>
-      MRP: <del>{{ product.price | currency: "INR" }}</del>
-    </h2>
-    <h2>MRP: {{ product.price | offers | currency: "INR" }}</h2>
-    <p>
-      <span [ngSwitch]="product.country">
-        Country :
-        <img
-          *ngSwitchCase="'Australia'"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/23px-Flag_of_Australia.svg.png"
-          width="24"
-        />
-        <img
-          *ngSwitchCase="'Germany'"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png"
-          width="24"
-        />
-        <img
-          *ngSwitchCase="'India'"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/23px-Flag_of_India.svg.png"
-          width="24"
-        />
-        <img
-          *ngSwitchDefault
-          src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_Japan.png"
-          width="24"
-        />
-      </span>
-    </p>
-  </div>
+  <app-book></app-book>
+  <app-laptop></app-laptop>
+  <app-mobile></app-mobile>
 </div>

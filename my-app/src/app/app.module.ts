@@ -10,9 +10,13 @@ import { BannerTwoComponent } from './banner-two/banner-two.component';
 import { BannerOneComponent } from './banner-one/banner-one.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductsComponent } from './products/products.component';
+import { MyDriDirective } from './my-dri.directive';
+import { MobileComponent } from './mobile/mobile.component';
+import { LaptopComponent } from './laptop/laptop.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
-  declarations: [AppComponent, OffersPipe, NavComponent, FooterComponent, BannerThreeComponent, BannerTwoComponent, BannerOneComponent, ContactUsComponent, ProductsComponent], // all components goes here
+  declarations: [AppComponent, OffersPipe, NavComponent, FooterComponent, BannerThreeComponent, BannerTwoComponent, BannerOneComponent, ContactUsComponent, ProductsComponent, MyDriDirective, MobileComponent, LaptopComponent, BookComponent], // all components goes here
   imports: [BrowserModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })

@@ -1,0 +1,34 @@
+<h1>mobile works!</h1>
+<h1>We have {{ calcProds() }} Mobiles..!</h1>
+
+<div *ngFor="let mobile of mobiles" class="prod-card">
+  <p>Id: {{ mobile.id }}</p>
+  <p>Name: {{ mobile.name }}</p>
+  <p>MRP: {{ mobile.price }}</p>
+  <p>in stock: {{ mobile.inStock }}</p>
+  <p>
+    <span [ngSwitch]="mobile.country">
+      Country :
+      <img
+        *ngSwitchCase="'Australia'"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Flag_of_Australia.svg/23px-Flag_of_Australia.svg.png"
+        width="24"
+      />
+      <img
+        *ngSwitchCase="'Germany'"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png"
+        width="24"
+      />
+      <img
+        *ngSwitchCase="'India'"
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/23px-Flag_of_India.svg.png"
+        width="24"
+      />
+      <img
+        *ngSwitchDefault
+        src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_Japan.png"
+        width="24"
+      />
+    </span>
+  </p>
+</div>
