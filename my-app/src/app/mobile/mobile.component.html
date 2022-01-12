@@ -1,9 +1,13 @@
 <h1>mobile works!</h1>
-<h1>We have {{ calcProds() }} Mobiles..!</h1>
+<h1>We have {{ tot }} Mobiles..!</h1>
 
-<div *ngFor="let mobile of mobiles" class="prod-card">
+<div
+  *ngFor="let mobile of mobiles"
+  class="prod-card"
+  [class.isSold]="mobile.isSold"
+>
   <p>Id: {{ mobile.id }}</p>
-  <p>Name: {{ mobile.name }}</p>
+  <p [style.color]="mobile.textColor">Name: {{ mobile.name }}</p>
   <p>MRP: {{ mobile.price }}</p>
   <p>in stock: {{ mobile.inStock }}</p>
   <p>
