@@ -17,6 +17,7 @@ export class MobileComponent {
   // sharedService = new SharedService();
   constructor(private sharedService: SharedService, private _api: ApiService) {
     this.tot = sharedService.calcProds(this.mobiles);
+
     _api.getMobileData().subscribe((data: any) => {
       console.log('data', data['mobile']);
       this.mobiles = data['mobile'];
