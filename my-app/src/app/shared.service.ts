@@ -16,3 +16,4 @@ export class SharedService {
     return tot;
   }
 }
+// ng g s shared

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { OffersPipe } from './offers.pipe';
@@ -16,8 +17,22 @@ import { LaptopComponent } from './laptop/laptop.component';
 import { BookComponent } from './book/book.component';
 
 @NgModule({
-  declarations: [AppComponent, OffersPipe, NavComponent, FooterComponent, BannerThreeComponent, BannerTwoComponent, BannerOneComponent, ContactUsComponent, ProductsComponent, MyDriDirective, MobileComponent, LaptopComponent, BookComponent], // all components goes here
-  imports: [BrowserModule], // browserModule: to exec. and render component
+  declarations: [
+    AppComponent,
+    OffersPipe,
+    NavComponent,
+    FooterComponent,
+    BannerThreeComponent,
+    BannerTwoComponent,
+    BannerOneComponent,
+    ContactUsComponent,
+    ProductsComponent,
+    MyDriDirective,
+    MobileComponent,
+    LaptopComponent,
+    BookComponent,
+  ], // all components goes here
+  imports: [BrowserModule, HttpClientModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })
 export class AppModule {}

@@ -1,0 +1,89 @@
+{
+  "mobile": [
+    {
+      "id": 1111,
+      "name": "Samsung",
+      "inStock": 0,
+      "price": 2200,
+      "country": "Australia",
+      "textColor": "red",
+      "isSold": false
+    },
+    {
+      "id": 222,
+      "name": "Moto",
+      "inStock": 30,
+      "price": 30000,
+      "country": "Australia",
+      "textColor": "green",
+      "isSold": false
+    },
+    {
+      "id": 33,
+      "name": "Sony",
+      "inStock": 60,
+      "price": 12000,
+      "country": "Australia",
+      "textColor": "blue",
+      "isSold": true
+    }
+  ],
+  "laptop": [
+    {
+      "id": 1001,
+      "name": "Samsung",
+      "inStock": 0,
+      "price": 2200,
+      "country": "Australia",
+      "textColor": "red",
+      "isSold": false
+    },
+    {
+      "id": 1002,
+      "name": "Moto",
+      "inStock": 30,
+      "price": 30000,
+      "country": "Australia",
+      "textColor": "green",
+      "isSold": false
+    },
+    {
+      "id": 1003,
+      "name": "Sony",
+      "inStock": 60,
+      "price": 12000,
+      "country": "Australia",
+      "textColor": "blue",
+      "isSold": true
+    }
+  ],
+  "book": [
+    {
+      "id": 1001,
+      "name": "Samsung",
+      "inStock": 0,
+      "price": 2200,
+      "country": "Australia",
+      "textColor": "red",
+      "isSold": false
+    },
+    {
+      "id": 1002,
+      "name": "Moto",
+      "inStock": 30,
+      "price": 30000,
+      "country": "Australia",
+      "textColor": "green",
+      "isSold": false
+    },
+    {
+      "id": 1003,
+      "name": "Sony",
+      "inStock": 60,
+      "price": 12000,
+      "country": "Australia",
+      "textColor": "blue",
+      "isSold": true
+    }
+  ]
+}
