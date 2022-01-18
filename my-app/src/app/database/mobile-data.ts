@@ -9,6 +9,8 @@ export const MOBILES: Mobile[] = [
     country: 'Australia',
     textColor: 'red',
     isSold: false,
+    img: './../../assets/img/1.jpeg',
+    quantity: 0,
   },
   {
     id: 1002,
@@ -18,6 +20,8 @@ export const MOBILES: Mobile[] = [
     country: 'Australia',
     textColor: 'green',
     isSold: false,
+    img: './../../assets/img/1.jpeg',
+    quantity: 0,
   },
   {
     id: 1003,
@@ -27,5 +31,7 @@ export const MOBILES: Mobile[] = [
     country: 'Australia',
     textColor: 'blue',
     isSold: true,
+    img: './../../assets/img/1.jpeg',
+    quantity: 0,
   },
 ];

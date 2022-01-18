@@ -6,4 +6,6 @@ export interface Mobile {
   country: string;
   textColor: string;
   isSold: boolean;
+  img: string;
+  quantity: number;
 }

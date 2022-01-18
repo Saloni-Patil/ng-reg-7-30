@@ -7,25 +7,31 @@
       "price": 2200,
       "country": "Australia",
       "textColor": "red",
-      "isSold": false
+      "isSold": false,
+      "img": "./../../assets/img/3.jpeg",
+      "quantity": 0
     },
     {
       "id": 222,
       "name": "Moto",
-      "inStock": 30,
+      "inStock": 5,
       "price": 30000,
       "country": "Australia",
       "textColor": "green",
-      "isSold": false
+      "isSold": false,
+      "img": "./../../assets/img/1.jpeg",
+      "quantity": 0
     },
     {
       "id": 33,
       "name": "Sony",
-      "inStock": 60,
+      "inStock": 160,
       "price": 12000,
       "country": "Australia",
       "textColor": "blue",
-      "isSold": true
+      "isSold": true,
+      "img": "./../../assets/img/2.jpeg",
+      "quantity": 0
     }
   ],
   "laptop": [

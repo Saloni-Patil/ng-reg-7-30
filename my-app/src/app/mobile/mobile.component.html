@@ -6,6 +6,9 @@
   class="prod-card"
   [class.isSold]="mobile.isSold"
 >
+  <p>
+    <img [src]="mobile.img" width="300px" />
+  </p>
   <p>Id: {{ mobile.id }}</p>
   <p [style.color]="mobile.textColor">Name: {{ mobile.name }}</p>
   <p>MRP: {{ mobile.price }}</p>
@@ -34,5 +37,11 @@
         width="24"
       />
     </span>
+  </p>
+  <p>
+    <button (click)="downQuantity(mobile)">-</button>
+    {{ mobile.quantity }}
+    <input type="text" [(ngModel)]="mobile.quantity" />
+    <button (click)="upQuantity(mobile)">+</button>
   </p>
 </div>

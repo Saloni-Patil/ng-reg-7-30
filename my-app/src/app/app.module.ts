@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { OffersPipe } from './offers.pipe';
@@ -32,7 +33,7 @@ import { BookComponent } from './book/book.component';
     LaptopComponent,
     BookComponent,
   ], // all components goes here
-  imports: [BrowserModule, HttpClientModule], // browserModule: to exec. and render component
+  imports: [BrowserModule, HttpClientModule, FormsModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })
 export class AppModule {}

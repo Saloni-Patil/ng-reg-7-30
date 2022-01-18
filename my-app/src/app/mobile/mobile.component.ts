@@ -1,6 +1,6 @@
 import { ApiService } from './../api.service';
 import { Mobile } from './../model/mobile-schema';
-import { MOBILES } from './../database/mobile-data';
+// import { MOBILES } from './../database/mobile-data';
 import { SharedService } from './../shared.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -16,18 +16,25 @@ export class MobileComponent {
   mobiles: Mobile[] = [];
   // sharedService = new SharedService();
   constructor(private sharedService: SharedService, private _api: ApiService) {
-    this.tot = sharedService.calcProds(this.mobiles);
-
     _api.getMobileData().subscribe((data: any) => {
       console.log('data', data['mobile']);
       this.mobiles = data['mobile'];
+      this.tot = sharedService.calcProds(this.mobiles);
     });
-  } // DI
+  }
 
-  // mobiles: Mobile[] = MOBILES;
+  // sayHello() {
+  //   alert('Hello..!');
+  // }
+  downQuantity(mobile: any) {
+    if (mobile.quantity > 0) {
+      mobile.quantity--;
+    }
+  }
 
-  // name = "Alex";
-  // var name = "Alex";
-  // let name = "Alex";
-  // const NAME = "Alex";
+  upQuantity(mobile: any) {
+    if (mobile.inStock > mobile.quantity) {
+      mobile.quantity++;
+    }
+  }
 }
