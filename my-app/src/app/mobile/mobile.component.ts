@@ -15,12 +15,23 @@ export class MobileComponent {
   age: number = 25;
   mobiles: Mobile[] = [];
   // sharedService = new SharedService();
-  constructor(private sharedService: SharedService, private _api: ApiService) {
-    _api.getMobileData().subscribe((data: any) => {
+  constructor(private sharedService: SharedService, private _api: ApiService) {}
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this._api.getMobileData().subscribe((data: any) => {
       console.log('data', data['mobile']);
       this.mobiles = data['mobile'];
-      this.tot = sharedService.calcProds(this.mobiles);
+      this.tot = this.sharedService.calcProds(this.mobiles);
     });
+  }
+
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    this.mobiles = [];
+    this.tot = '';
   }
 
   // sayHello() {

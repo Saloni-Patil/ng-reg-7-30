@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { OffersPipe } from './offers.pipe';
@@ -17,6 +16,7 @@ import { MobileComponent } from './mobile/mobile.component';
 import { LaptopComponent } from './laptop/laptop.component';
 import { BookComponent } from './book/book.component';
 
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
