@@ -17,13 +17,7 @@ import { LaptopComponent } from './laptop/laptop.component';
 import { BookComponent } from './book/book.component';
 
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
-
-const appRoutes: Routes = [
-  { path: 'mobile', component: MobileComponent },
-  { path: 'lapi', component: LaptopComponent },
-  { path: 'book', component: BookComponent },
-];
+import { RoutesModule } from './routes/routes.module';
 
 @NgModule({
   declarations: [
@@ -41,12 +35,7 @@ const appRoutes: Routes = [
     LaptopComponent,
     BookComponent,
   ], // all components goes here
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes),
-  ], // browserModule: to exec. and render component
+  imports: [BrowserModule, HttpClientModule, FormsModule, RoutesModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })
 export class AppModule {}
