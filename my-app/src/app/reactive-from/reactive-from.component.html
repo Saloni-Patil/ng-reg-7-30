@@ -1,1 +1,17 @@
 <p>reactive-from works!</p>
+
+<form [formGroup]="formObj">
+  <input type="text" formControlName="uNameObj" placeholder="Username" />
+  <br />
+  <div
+    *ngIf="formObj.get('uNameObj')?.touched && formObj.get('uNameObj')?.invalid"
+    style="color: red"
+  >
+    Error...!
+    <!-- uName.errors.required -->
+    <div *ngIf="uName?.errors?.['required']">req</div>
+    <div *ngIf="uName?.errors?.['minlength']">min 3</div>
+  </div>
+
+  <input type="password" formControlName="passObj" placeholder="Password" />
+</form>

@@ -16,7 +16,7 @@ import { MobileComponent } from './mobile/mobile.component';
 import { LaptopComponent } from './laptop/laptop.component';
 import { BookComponent } from './book/book.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RoutesModule } from './routes/routes.module';
 import { TempFromComponent } from './temp-from/temp-from.component';
 import { ReactiveFromComponent } from './reactive-from/reactive-from.component';
@@ -39,7 +39,13 @@ import { ReactiveFromComponent } from './reactive-from/reactive-from.component';
     TempFromComponent,
     ReactiveFromComponent,
   ], // all components goes here
-  imports: [BrowserModule, HttpClientModule, FormsModule, RoutesModule], // browserModule: to exec. and render component
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    RoutesModule,
+    ReactiveFormsModule,
+  ], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component
 })
 export class AppModule {}
