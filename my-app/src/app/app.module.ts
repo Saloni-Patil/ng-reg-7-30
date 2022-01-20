@@ -18,6 +18,8 @@ import { BookComponent } from './book/book.component';
 
 import { FormsModule } from '@angular/forms';
 import { RoutesModule } from './routes/routes.module';
+import { TempFromComponent } from './temp-from/temp-from.component';
+import { ReactiveFromComponent } from './reactive-from/reactive-from.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { RoutesModule } from './routes/routes.module';
     MobileComponent,
     LaptopComponent,
     BookComponent,
+    TempFromComponent,
+    ReactiveFromComponent,
   ], // all components goes here
   imports: [BrowserModule, HttpClientModule, FormsModule, RoutesModule], // browserModule: to exec. and render component
   bootstrap: [AppComponent], // UI: root / entry component

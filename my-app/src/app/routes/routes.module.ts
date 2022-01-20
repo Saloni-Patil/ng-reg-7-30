@@ -1,3 +1,5 @@
+import { ReactiveFromComponent } from './../reactive-from/reactive-from.component';
+import { TempFromComponent } from './../temp-from/temp-from.component';
 import { BookComponent } from './../book/book.component';
 import { LaptopComponent } from './../laptop/laptop.component';
 import { MobileComponent } from './../mobile/mobile.component';
@@ -12,6 +14,8 @@ const appRoutes: Routes = [
   { path: 'mobile', component: MobileComponent },
   { path: 'lapi/:id', component: LaptopComponent },
   { path: 'book', component: BookComponent },
+  { path: 'temp', component: TempFromComponent },
+  { path: 'react', component: ReactiveFromComponent },
 ];
 
 @NgModule({

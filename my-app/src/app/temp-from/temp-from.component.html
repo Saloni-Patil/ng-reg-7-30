@@ -1,0 +1,16 @@
+<h1 align="center">temp-from works!</h1>
+
+<form>
+  <input
+    type="text"
+    placeholder="Username"
+    ngModel
+    name="uName"
+    #tempVar="ngModel"
+    (input)="catchVal(tempVar)"
+    required
+  />
+  <div style="color: red" *ngIf="tempVar.touched && !tempVar.valid">
+    Error: Something Went Wrong..!
+  </div>
+</form>
