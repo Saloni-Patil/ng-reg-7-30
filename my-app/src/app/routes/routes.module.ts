@@ -5,9 +5,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
+// var id = 1001;
+// /:id   = /1001
+
 const appRoutes: Routes = [
   { path: 'mobile', component: MobileComponent },
-  { path: 'lapi', component: LaptopComponent },
+  { path: 'lapi/:id', component: LaptopComponent },
   { path: 'book', component: BookComponent },
 ];
 
