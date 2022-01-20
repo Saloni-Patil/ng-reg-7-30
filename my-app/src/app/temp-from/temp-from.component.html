@@ -9,8 +9,13 @@
     #tempVar="ngModel"
     (input)="catchVal(tempVar)"
     required
+    minlength="3"
+    pattern="Angular"
   />
   <div style="color: red" *ngIf="tempVar.touched && !tempVar.valid">
-    Error: Something Went Wrong..!
+    Something Went Wrong..!
+    <div *ngIf="tempVar.errors?.['required']">required</div>
+    <div *ngIf="tempVar.errors?.['minlength']">minlength</div>
+    <div *ngIf="tempVar.errors?.['pattern']">pattern</div>
   </div>
 </form>
